@@ -657,11 +657,6 @@ h1 {
   box-shadow: var(--shadow-soft);
 }
 
-.pricing-card-featured {
-  border-color: #BBD7FF;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F5F9FF 100%);
-}
-
 .pricing-kicker {
   margin: 0 0 8px;
   color: #0F766E;
