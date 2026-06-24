@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to ActiveMemo</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    const storeUrl = new URL("https://apps.microsoft.com/detail/9mzx09bst9ph");
+    storeUrl.searchParams.set("hl", "en-us");
+    storeUrl.searchParams.set("gl", "US");
+    storeUrl.searchParams.set("cid", "am_ph_launch_v1");
+
+    location.replace(storeUrl.toString());
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://apps.microsoft.com/detail/9mzx09bst9ph?hl=en-us&amp;gl=US&amp;cid=am_ph_launch_v1">
+  </noscript>
+</head>
+<body>
+  <p>
+    Redirecting to ActiveMemo on Microsoft Store...
+    <a href="https://apps.microsoft.com/detail/9mzx09bst9ph?hl=en-us&amp;gl=US&amp;cid=am_ph_launch_v1">Continue</a>
+  </p>
+</body>
+</html>
