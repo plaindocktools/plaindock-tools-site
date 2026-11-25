@@ -453,6 +453,26 @@ h1 {
   color: var(--color-note);
 }
 
+.app-limits p {
+  margin: 0 0 6px;
+}
+
+.app-limits ul {
+  margin: 0;
+  padding-left: 1.35em;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-more {
+  margin: 20px 0 0;
+  text-align: right;
+}
+
 .site-footer {
   border-top: 1px solid var(--color-border);
   background: var(--color-bg-gray);
@@ -495,11 +515,19 @@ h1 {
 }
 
 .app-hero-en {
-  background-image: url("./activememo/screenshot-keep-active-en.webp");
+  background-color: var(--color-bg-soft);
+  background-image: url("./activememo/v3/en/hero.jpg");
+  background-position: right 4% center;
+  background-repeat: no-repeat;
+  background-size: auto 86%;
 }
 
 .app-hero-ja {
-  background-image: url("./activememo/screenshot-keep-active-ja.webp");
+  background-color: var(--color-bg-soft);
+  background-image: url("./activememo/v3/ja/hero.jpg");
+  background-position: right 4% center;
+  background-repeat: no-repeat;
+  background-size: auto 86%;
 }
 
 .app-hero-overlay {
