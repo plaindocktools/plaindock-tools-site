@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SimpleAI | Local AI chat for Windows, on your PC</title>
+  <meta name="description" content="SimpleAI is a Windows app for chatting with an AI that runs on your own PC (via Ollama). Your conversations are not sent to the developer's servers.">
+  <link rel="alternate" hreflang="ja" href="../../ja/simpleai/">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="../" aria-label="PlainDock Tools home">
+        <img class="brand-logo" src="../../assets/plaindock-tools-logo-horizontal.png" alt="PlainDock Tools">
+      </a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Site navigation">
+          <a href="../">Home</a>
+          <a href="../privacy/">Privacy</a>
+          <a href="../support/">Support</a>
+          <select class="app-select" aria-label="Apps" onchange="if (this.value) window.location.href = this.value;">
+            <option value="">Apps</option>
+            <option value="../activememo/">ActiveMemo</option>
+            <option value="./" selected>SimpleAI</option>
+          </select>
+        </nav>
+        <div class="language-switch" aria-label="Language switcher">
+          <span aria-current="true">English</span>
+          <a href="../../ja/simpleai/" aria-label="View this page in Japanese">日本語</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <p class="eyebrow">SimpleAI for Windows</p>
+        <h1>Chat with AI. Keep it on your PC.</h1>
+        <p class="lead">Ask an AI running on your own PC to draft, summarize, rephrase or brainstorm. Your conversations are not sent to the developer's servers.</p>
+        <p class="lead">Requires Ollama, a separate free app. Setup in SimpleAI guides you from installation to your first chat.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#start">Get started</a>
+          <span class="button button-secondary" aria-disabled="true">Microsoft Store (coming soon)</span>
+        </div>
+      </div>
+      <div class="hero-logo-card" aria-hidden="true">
+        <img class="hero-logo" src="../../assets/plaindock-tools-mark.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="requirements" class="section app-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What you need</h2>
+        </div>
+        <div class="app-feature-grid">
+          <article class="app-feature">
+            <span>01</span>
+            <h3>Windows 10 / 11</h3>
+            <p>SimpleAI is a Windows app.</p>
+          </article>
+          <article class="app-feature">
+            <span>02</span>
+            <h3>Ollama (free)</h3>
+            <p>The software that runs the AI. It is installed separately, and SimpleAI guides you through it.</p>
+          </article>
+          <article class="app-feature">
+            <span>03</span>
+            <h3>Disk space and internet</h3>
+            <p>AI models are a few GB to over ten GB and are downloaded once, so you need an internet connection for that step.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section section-soft">
+      <div class="container">
+        <div class="section-header">
+          <h2>What it does</h2>
+        </div>
+        <div class="app-feature-grid app-feature-grid-four">
+          <article class="app-feature">
+            <span>01</span>
+            <h3>Picks an AI that fits your PC</h3>
+            <p>It checks your GPU memory and RAM, recommends one of three models (light, standard or high quality), and installs it with one button. You can switch freely.</p>
+          </article>
+          <article class="app-feature">
+            <span>02</span>
+            <h3>Task templates</h3>
+            <p>Emails, replies, apologies, daily reports, meeting minutes, summaries, proofreading, rewriting, translation, brainstorming and more. Pick one, fill in the blanks, and send.</p>
+          </article>
+          <article class="app-feature">
+            <span>03</span>
+            <h3>Read your files</h3>
+            <p>Attach text-based files (.txt, .md, .csv, .json, etc.) and ask about their contents. PDF, Word and Excel files are not supported.</p>
+          </article>
+          <article class="app-feature">
+            <span>04</span>
+            <h3>Keep and search conversations</h3>
+            <p>Conversations are saved on your PC and can be searched by title and text. You can rename, pin and delete them.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="section app-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Getting started</h2>
+          <p>Just follow the notices in the app.</p>
+        </div>
+        <article class="policy-card">
+          <ol>
+            <li>When you start the app and Ollama is missing or not running, a notice appears.</li>
+            <li>Press "Setup". It checks and installs Ollama, gets the recommended AI, and (optionally) tunes performance for your PC, in that order.</li>
+            <li>When it finishes, you can start chatting right away.</li>
+          </ol>
+          <p>If Ollama is only stopped, press "Start Ollama" in the notice.</p>
+          <h2>About installing Ollama</h2>
+          <p>The direct-download edition asks for your consent, then downloads Ollama's installer from the official site (ollama.com), verifies the publisher's signature, and runs it. Without your consent, it downloads and runs nothing.</p>
+          <p>The Microsoft Store edition only opens the official download page and guides you. The app never runs the installer itself.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="models" class="section section-soft">
+      <div class="container">
+        <div class="section-header">
+          <h2>Choosing a model</h2>
+          <p>The app recommends one that fits your PC. You can switch later.</p>
+        </div>
+        <div class="guide-table-wrap">
+          <table class="guide-table">
+            <thead>
+              <tr><th></th><th>Model</th><th>Suited PC (guide)</th><th>Good for</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>Light</th><td>Gemma 3 4B</td><td>Works with little GPU memory or no dedicated GPU (slower)</td><td>Simple tasks. Weak at math and at instructions to rewrite text</td></tr>
+              <tr><th>Standard</th><td>Gemma 4 12B</td><td>12 GB+ GPU memory, 16 GB+ RAM</td><td>Everyday use, including more involved requests</td></tr>
+              <tr><th>High quality</th><td>Gemma 4 26B</td><td>24 GB+ GPU memory, 32 GB+ RAM</td><td>Best quality. Can be slow or fail on PCs without enough memory</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Behavior was checked on the developer's own PC (16 GB GPU memory, 32 GB RAM). Speed and behavior may differ on other PCs.</p>
+        <div class="note-box app-limits">
+          <p><strong>Before you use it</strong></p>
+          <ul>
+            <li>AI answers can contain mistakes. Please verify anything important.</li>
+            <li>The light model is weak at math and at instructions to rewrite text.</li>
+            <li>Speed and behavior depend on your PC.</li>
+            <li>The terms of use for AI models (such as Gemma) follow their respective distributors.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="section app-section">
+      <div class="container">
+        <div class="app-two-column">
+          <div>
+            <p class="eyebrow">Privacy</p>
+            <h2>Your conversations are stored on your PC.</h2>
+            <p>Conversation history and settings are stored only on your PC. Your conversations are never sent to the developer's servers. The only place your messages go is the Ollama you connect to (by default, your own PC). The connection is limited to your own PC or your local network.</p>
+            <div class="hero-actions">
+              <a class="button button-secondary" href="./privacy/">Read the privacy policy</a>
+            </div>
+          </div>
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Need help?</h2>
+            <p>If something does not work, or you have a question, please reach out from the support page.</p>
+            <div class="hero-actions">
+              <a class="button button-secondary" href="../support/">Get support</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="../../assets/plaindock-tools-mark.png" alt="">
+        <span>&copy; 2026 PlainDock Tools</span>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../">Home</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="../support/">Support</a>
+        <a href="../activememo/">ActiveMemo</a>
+        <a href="./">SimpleAI</a>
+        <a href="../../ja/simpleai/">日本語</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
