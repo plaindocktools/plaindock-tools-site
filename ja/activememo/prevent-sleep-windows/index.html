@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Windowsのスリープ防止ソフトと設定｜標準設定・PowerToys Awake・ActiveMemoの使い分け</title>
+  <meta name="description" content="Windowsがスリープや画面オフになるのを防ぐ方法を整理。標準の電源設定、PowerToys Awake、ActiveMemoの使い分けと、それぞれの限界を紹介します。">
+  <link rel="canonical" href="https://plaindocktools.com/ja/activememo/prevent-sleep-windows/">
+  <link rel="alternate" hreflang="ja" href="https://plaindocktools.com/ja/activememo/prevent-sleep-windows/">
+  <link rel="alternate" hreflang="en" href="https://plaindocktools.com/en/activememo/prevent-sleep-windows/">
+  <link rel="alternate" hreflang="x-default" href="https://plaindocktools.com/en/activememo/prevent-sleep-windows/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Windowsのスリープ防止ソフトと設定｜標準設定・PowerToys Awake・ActiveMemoの使い分け">
+  <meta property="og:description" content="Windowsがスリープや画面オフになるのを防ぐ方法を整理。標準の電源設定、PowerToys Awake、ActiveMemoの使い分けと、それぞれの限界を紹介します。">
+  <meta property="og:url" content="https://plaindocktools.com/ja/activememo/prevent-sleep-windows/">
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-link" href="../../" aria-label="PlainDock Tools ホーム">
+        <img class="brand-logo" src="../../../assets/plaindock-tools-logo-horizontal.png" alt="PlainDock Tools">
+      </a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="サイトナビゲーション">
+          <a href="../../">ホーム</a>
+          <a href="../../privacy/">プライバシー</a>
+          <a href="../../support/">サポート</a>
+          <select class="app-select" aria-label="アプリ一覧" onchange="if (this.value) window.location.href = this.value;">
+            <option value="">アプリ一覧</option>
+            <option value="../" selected>ActiveMemo</option>
+          </select>
+        </nav>
+        <div class="language-switch" aria-label="言語切り替え">
+          <span aria-current="true">日本語</span>
+          <a href="../../../en/activememo/prevent-sleep-windows/" aria-label="View this page in English">English</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <p class="eyebrow">ActiveMemo ガイド</p>
+        <h1>Windowsのスリープを防ぐ方法と、ソフトの使い分け</h1>
+        <p class="lead">長い処理を待っているとき、資料を読んでいるとき、PCが勝手にスリープや画面オフになると作業が止まります。まずWindowsの設定、次にソフト、という順に整理しました。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://apps.microsoft.com/detail/9mzx09bst9ph?hl=ja-jp&amp;gl=JP&amp;cid=am_site_ja_sleep_v1">7日間無料で試す（Microsoft Store）</a>
+          <a class="button button-secondary" href="#compare">比較を見る</a>
+        </div>
+      </div>
+      <div class="hero-logo-card" aria-hidden="true">
+        <img class="hero-logo" src="../../../assets/plaindock-tools-mark.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <main class="container main-content">
+    <article class="policy-card guide-card">
+      <p class="guide-updated">最終更新: 2026年11月27日</p>
+      <h2>まずはWindowsの標準設定</h2>
+      <p>スリープまでの時間は、Windowsの設定で変えられます。Windows 11では「設定」→「システム」→「電源とバッテリー」→「画面とスリープ」、Windows 10では「設定」→「システム」→「電源とスリープ」です。</p>
+      <p>会社のPCでは、組織のポリシーで時間が決まっていて、変更できないことがあります。</p>
+      <h2>ソフトを使うなら</h2>
+      <ul>
+        <li>PowerToys Awake：Microsoftのユーティリティ「PowerToys」の機能です。電源とスリープの設定を変えずに、PCを起動し続けられます。長い処理を待つときに向いています。</li>
+        <li>ActiveMemo：無操作中のPCをアクティブに保ち、スリープや画面オフによる中断を減らします。ローカルメモつきなので、資料を読む、セミナーを見る、会議に出るあいだにメモも取れます。</li>
+        <li>そのほかの無料ソフト：スリープ防止ソフトは数多くあります。入れる前に、配布元と評価を確認してください。</li>
+      </ul>
+      <figure class="guide-figure">
+        <img src="../../../assets/activememo/v3/ja/02-keep-active-minimized.jpg" alt="最小化してもKeep Activeが続くことを説明するActiveMemoの画面" width="1200" height="675" loading="lazy">
+        <figcaption>ActiveMemoのKeep Activeは、最小化している間も続きます。</figcaption>
+      </figure>
+      <h2 id="compare">使い分けの目安</h2>
+      <div class="guide-table-wrap">
+        <table class="guide-table">
+          <thead><tr><th scope="col">やりたいこと</th><th scope="col">おすすめ</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">時間を決めて、PCを起こしておきたい（長い処理・ダウンロード待ち）</th><td>Windowsの設定、またはPowerToys Awake</td></tr>
+          <tr><th scope="row">席にいる間、資料・セミナー・会議でPCを止めずに、メモも取りたい</th><td>ActiveMemo</td></tr>
+          <tr><th scope="row">ノートPCのフタを閉じたまま使いたい</th><td>Windowsの電源オプションの「カバーを閉じたときの動作」（ActiveMemoの役割ではありません）</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>「眠らせないだけ」なら、<a href="https://learn.microsoft.com/ja-jp/windows/powertoys/awake">PowerToys Awake</a>で足りることがあります。それで足りる人は、Awakeで十分です。</p>
+      <h2>ActiveMemoのKeep Active</h2>
+      <ul>
+        <li>起動すると最初からオン。画面左下のスイッチで、いつでもオン／オフできます。</li>
+        <li>最小化しても続きます。Ctrl + Alt + Spaceで、ウィンドウを最小化・復元できます。</li>
+        <li>7日間、すべての機能を無料で試せます。</li>
+      </ul>
+      <h2>ActiveMemoにできないこと（先にお伝えします）</h2>
+      <div class="note-box app-limits">
+        <p><strong>ご利用前に</strong></p>
+        <ul>
+          <li>PCがスリープしているときや、画面がロックされているときは、Keep Activeは働きません。</li>
+          <li>ウィンドウの×ボタンでアプリを終了すると、Keep Activeも止まります。</li>
+          <li>Teamsなどの表示の続き方は、お使いの環境や組織の設定によって変わる場合があります。</li>
+          <li>勤務先・所属組織のルールに従ってお使いください。勤務状況を偽る目的での利用はおすすめしません。</li>
+        </ul>
+      </div>
+      <h2>よくある質問</h2>
+      <div class="guide-faq">
+        <h3>スリープと画面オフは、違うものですか？</h3>
+        <p>一般に、スリープ（PCが省電力状態に入る）と、画面オフ（ディスプレイが消える）は、別の設定です。ActiveMemoは、スリープや画面オフによる中断を減らします。</p>
+        <h3>PCを自分でスリープにしたあとも、働きますか？</h3>
+        <p>いいえ。PCがスリープしているときは、Keep Activeは働きません。</p>
+        <h3>無料で使えますか？</h3>
+        <p>初回起動から7日間は、すべての機能を無料で試せます。そのあとも続けて使うには、ActiveMemo Pro（サブスクリプション）が必要です。Proにしない場合も、今あるメモの閲覧・コピー・エクスポートは使えます。</p>
+      </div>
+      <h2>関連ガイド</h2>
+      <ul>
+        <li><a href="../mouse-jiggler-alternative/">マウスジグラーの代わりになるソフト</a></li>
+        <li><a href="../teams-stay-available/">Teamsが退席中にならないソフト</a></li>
+        <li><a href="../teams-away-status/">Teamsで退席中にしない方法</a></li>
+        <li><a href="../">ActiveMemoの機能を見る</a></li>
+      </ul>
+    </article>
+
+    <section class="guide-cta">
+      <h2>まずは7日間、いつもの作業で試す</h2>
+      <p>Microsoft StoreからActiveMemoをインストールすると、7日間の無料試用が始まります。</p>
+      <a class="button button-primary" href="https://apps.microsoft.com/detail/9mzx09bst9ph?hl=ja-jp&amp;gl=JP&amp;cid=am_site_ja_sleep_v1">7日間無料で試す（Microsoft Store）</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="../../../assets/plaindock-tools-mark.png" alt="">
+        <span>&copy; 2026 PlainDock Tools</span>
+      </div>
+      <nav class="footer-links" aria-label="フッターナビゲーション">
+        <a href="../../">ホーム</a>
+        <a href="../../privacy/">プライバシー</a>
+        <a href="../../support/">サポート</a>
+        <a href="../">ActiveMemo</a>
+        <a href="../../../en/activememo/prevent-sleep-windows/">English</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
