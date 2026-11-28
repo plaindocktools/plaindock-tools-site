@@ -944,4 +944,9 @@ h1 {
   .app-feature-grid-four {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  /* 5 枚目(文書チャット)は、下に横いっぱいで置く */
+  .app-feature-wide {
+    grid-column: 1 / -1;
+  }
 }

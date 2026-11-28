@@ -68,7 +68,7 @@
 
     <article class="policy-card">
       <section class="meta">
-        <div><strong>Last updated</strong>2026/11/27</div>
+        <div><strong>Last updated</strong>2026/11/28</div>
         <div><strong>Developer</strong>PlainDock Tools</div>
         <div><strong>App</strong>TemotoAI</div>
       </section>
@@ -80,6 +80,7 @@
       <p>Your conversations are sent only to the Ollama server specified as the "connection target" in Settings. By default, this is your own PC (http://localhost:11434).</p>
       <ul>
         <li>Your conversation is sent to this target and used to receive the AI's reply.</li>
+        <li>When you use document chat (Pro), the text of the documents you register (split into small pieces for searching) and the text of your questions are also sent to the Ollama server at this target (used for "embedding", which reads and searches the documents). Excerpts of the parts relevant to your question are also sent to this target to produce the reply.</li>
         <li>The target is limited to your own PC (localhost) or an IP address on your local network. If you change it to another computer, your conversations are sent to that computer, and its administrator's handling applies. Specify only targets you trust.</li>
         <li>Model downloads ("Model setup" in Settings) are performed by the connected Ollama, from Ollama's distribution site, Hugging Face and similar sources. The App does not download models directly.</li>
       </ul>
@@ -92,10 +93,11 @@
       <p>The following is stored only on your device.</p>
       <ul>
         <li>Conversation history (titles, messages, replies, timestamps)</li>
+        <li>Text of documents you register in document chat (Pro), the search index made from it, and which documents each conversation uses (the original files are neither copied nor changed)</li>
         <li>Settings (connection target, selected model, generation settings, system prompt, etc.)</li>
         <li>The last result of the purchase-status check (whether you have Pro)</li>
       </ul>
-      <p>You can delete conversation history with "Delete" in the App. When you uninstall the App, the stored information is normally removed (Microsoft Store edition).</p>
+      <p>You can delete conversation history with "Delete" in the App. A registered document is deleted, together with its index, with "Delete" in the document library. When you uninstall the App, the stored information is normally removed (Microsoft Store edition).</p>
       <h2>5. Purchases</h2>
       <p>Purchases, cancellations and refunds of the Pro plan are handled by the Microsoft Store. Neither the App nor the developer receives your payment information (such as card numbers). The App receives from the Microsoft Store only your purchase status, that is, which plan you have purchased. Microsoft's handling of information follows the Microsoft Privacy Statement.</p>
       <h2>6. Disclosure to third parties</h2>
